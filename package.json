@@ -1,7 +1,21 @@
 {
   "name": "glimmer-qrious",
-  "version": "0.0.0",
-  "description": "A brand new Glimmer app.",
+  "version": "0.0.1",
+  "description": "Glimmerjs components using QRious library to generate QR code in webpage.",
+  "keywords": [
+    "glimmerjs",
+    "web-component",
+    "qrious",
+    "qrcode",
+    "qrious-img",
+    "qrious-canvas"
+  ],
+  "author": "Lumalé Pierre-arnaud <kadactivity@gmail.com> ()",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c0urg3tt3/glimmer-qrious"
+  },
+  "bugs": "https://github.com/c0urg3tt3/glimmer-qrious/issues",
   "directories": {
     "doc": "doc",
     "test": "tests"

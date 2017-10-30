@@ -1,7 +1,10 @@
 # glimmer-qrious
 
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
+Glimmerjs components using QRious library to generate QR code in webpage.
+
+## Demo
+
+see the [demo](http://c0urg3tt3.github.io/glimmer-qrious)
 
 ## Prerequisites
 
@@ -32,3 +35,5 @@ You will need the following things properly installed on your computer.
 
 * [glimmerjs](http://github.com/tildeio/glimmer/)
 * [ember-cli](https://ember-cli.com/)
+* [qrious](https://neocotic.com/qrious/)
+* [QR code](http://www.qrcode.com/en/)
