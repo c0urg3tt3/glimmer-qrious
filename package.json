@@ -25,7 +25,9 @@
     "ember-cli-inject-live-reload": "^1.6.1",
     "ember-cli-sass": "^6.2.0",
     "ember-cli-uglify": "^2.0.0-beta.1",
+    "qrious": "^4.0.2",
     "qunitjs": "^2.3.3",
+    "rollup-plugin-commonjs": "^8.2.5",
     "typescript": "^2.2.2"
   },
   "engines": {

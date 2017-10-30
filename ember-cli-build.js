@@ -1,11 +1,18 @@
 'use strict';
 
-const GlimmerApp = require('@glimmer/application-pipeline').GlimmerApp;
+const cjs = require('rollup-plugin-commonjs')
+const GlimmerApp = require('@glimmer/application-pipeline').GlimmerApp
 
 module.exports = function(defaults) {
   let app = new GlimmerApp(defaults, {
-    // Add options here
-  });
+    rollup: {
+      plugins: [
+        cjs({
+          include: /node_modules/
+        })
+      ]
+    }
+  })
 
   return app.toTree();
-};
+}
