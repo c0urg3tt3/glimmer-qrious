@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*:focus {
+  outline: lightcoral auto 5px; }
+
+#app {
+  min-width: 20rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-family: cursive; }
+  #app hr {
+    margin: 2rem auto;
+    width: 50%; }
+  #app a {
+    text-decoration: none;
+    color: lightcoral;
+    padding: .1rem .2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .6s; }
+    #app a:hover, #app a:active {
+      color: white;
+      background: lightcoral; }
+  #app .glimmer-qrious {
+    text-align: center; }
+    #app .glimmer-qrious > h1 {
+      margin: 2rem 0; }
+    #app .glimmer-qrious > p {
+      padding: 0 1rem; }
+    #app .glimmer-qrious > section {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @supports (display: grid) {
+        #app .glimmer-qrious > section {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+          grid-auto-rows: auto; } }
+      #app .glimmer-qrious > section > header > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none; }
+        #app .glimmer-qrious > section > header > ul > li {
+          flex: 0 0 auto; }
+          #app .glimmer-qrious > section > header > ul > li::after {
+            content: ", "; }
+          #app .glimmer-qrious > section > header > ul > li:last-child::after {
+            content: ""; }
+      #app .glimmer-qrious > section > pre {
+        margin: 1rem;
+        padding: 1rem;
+        text-align: left;
+        background: #ddd;
+        border-radius: 5px; }
