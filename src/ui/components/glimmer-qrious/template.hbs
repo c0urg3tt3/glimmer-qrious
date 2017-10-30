@@ -1,1 +1,100 @@
-<div><h1>Welcome to Glimmer!</h1></div>
+<main class="glimmer-qrious">
+  <h1>glimmer-qrious</h1>
+
+  <p><a href="https://glimmerjs.com" target="_blank" rel="noopener">Glimmer</a> component using
+    <a href="https://neocotic.com/qrious/" target="_blank" rel="noopener">QRious</a> library for
+    <a href="http://www.qrcode.com/en/" target="_blank" rel="noopener">QR code</a> generation in webpage.</p>
+
+  <hr/>
+
+  <section>
+    <header>
+      <h2>as image</h2>
+      <p>minimal args to provide</p>
+      <ul>
+        <li>@value</li>
+        <li>&nbsp;@title</li>
+        <li>&nbsp;@alt</li>
+      </ul>
+    </header>
+
+    <pre><code>&lt;qrious-img
+  @background="white"
+  @backgroundAlpha=1
+  @foreground="black"
+  @foregroundAlpha=1
+  @level="H"
+  @padding=&lbrace;&lbrace;null&rbrace;&rbrace;
+  @mime="image/png"
+  @size=200
+  @value="glimmer-qrious"
+  @title="qr code"
+  @alt="qr code"
+/&gt;</code></pre>
+
+    <figure>
+      <qrious-img
+        @background="white"
+        @backgroundAlpha=1
+        @foreground="black"
+        @foregroundAlpha=1
+        @level="H"
+        @padding={{null}}
+        @mime="image/png"
+        @size=200
+        @value="https://github.com/c0urg3tt3/glimmer-qrious"
+        @alt="qr code"
+        @title="qr code"
+      />
+      <figcaption>qr code as image</figcaption>
+    </figure>
+  </section>
+
+  <hr/>
+
+  <section>
+    <header>
+      <h2>as canvas</h2>
+      <p>minimal args to provide</p>
+      <ul>
+        <li>@value</li>
+        <li>&nbsp;@title</li>
+      </ul>
+    </header>
+    <pre><code>&lt;qrious-canvas
+  @background="white"
+  @backgroundAlpha=1
+  @foreground="black"
+  @foregroundAlpha=1
+  @level="H"
+  @padding=&lbrace;&lbrace;null&rbrace;&rbrace;
+  @mime="image/png"
+  @size=200
+  @value="glimmer-qrious"
+  @title="qr code"
+/&gt;</code></pre>
+
+    <figure>
+      <qrious-canvas
+        @background="white"
+        @backgroundAlpha=1
+        @foreground="black"
+        @foregroundAlpha=1
+        @level="H"
+        @padding={{null}}
+        @mime="image/png"
+        @size=200
+        @value="https://github.com/c0urg3tt3/glimmer-qrious"
+        @title="qr code"
+      />
+      <figcaption>qr code as canvas</figcaption>
+    </figure>
+  </section>
+
+  <hr/>
+
+  <footer>
+    <p>view on <a href="https://github.com/c0urg3tt3/glimmer-qrious" target="_blank" rel="noopener">github</a></p>
+    <p>&copy; 2017 - Pierre-Arnaud Lumalé</p>
+  </footer>
+</main>
